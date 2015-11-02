@@ -1,3 +1,26 @@
 #! /bin/bash
 
-git grep -l $1 | xargs sed -i '' -e "s/$1/$2/g"
+usage() {
+  echo "usage: git replace-text <pattern-to-find> <replace-word>"
+}
+
+main() {
+  if [ "$1" = "-h" ]; then
+    usage
+    exit 0
+  elif [ "$1" = "" ]; then
+    echo "<pattern-to-find> and <replace-word> is not found"
+    echo ""
+    usage
+    exit 0
+  elif [ "$2" = "" ]; then
+    echo "<replace-word> is not found"
+    echo ""
+    usage
+    exit 0
+  fi
+
+  git grep -l $1 | xargs sed -i '' -e "s/$1/$2/g"
+}
+
+main "$@"
