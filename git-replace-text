@@ -9,7 +9,7 @@ main() {
     usage
     exit 0
   elif [ "$1" = "" ]; then
-    echo "<pattern-to-find> and <replace-word> is not found"
+    echo "error: no pattern given."
     echo ""
     usage
     exit 0
