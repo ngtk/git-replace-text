@@ -30,7 +30,8 @@
 prefix=/usr/local
 
 # files that need mode 755
-EXEC_FILES=git-replace-text
+EXEC_FILES  =git-replace-text
+EXEC_FILES +=git-rep
 
 # files that need mode 644
 # SCRIPT_FILES =git-replace-text
