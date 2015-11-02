@@ -33,9 +33,6 @@ prefix=/usr/local
 EXEC_FILES  =git-replace-text
 EXEC_FILES +=git-rep
 
-# files that need mode 644
-# SCRIPT_FILES =git-replace-text
-
 all:
 	@echo "usage: make install"
 	@echo "       make uninstall"
@@ -43,9 +40,8 @@ all:
 install:
 	install -d -m 0755 $(prefix)/bin
 	install -m 0755 $(EXEC_FILES) $(prefix)/bin
-	# install -m 0644 $(SCRIPT_FILES) $(prefix)/bin
 
 uninstall:
 	test -d $(prefix)/bin && \
 	cd $(prefix)/bin && \
-	rm -f $(EXEC_FILES) # $(SCRIPT_FILES)
+	rm -f $(EXEC_FILES)
