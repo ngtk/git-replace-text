@@ -1,11 +1,11 @@
-git-rep
+git-replace-text
 ========
-``git-rep`` is a git sub-command to replace text in repository.
+``git-replace-text`` is a git sub-command to replace the text in repository.
 
 
 Usage
 ---------------
 Replace the text in repository:
 
-    $ git rep <before-pattern> <after-word>
+    $ git replace-text <before-pattern> <after-word>
 

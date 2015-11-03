@@ -1,3 +1,0 @@
-#! /bin/bash
-
-git-replace-text $1 $2

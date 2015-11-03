@@ -30,8 +30,7 @@
 prefix=/usr/local
 
 # files that need mode 755
-EXEC_FILES  =git-replace-text
-EXEC_FILES +=git-rep
+EXEC_FILES=git-replace-text
 
 all:
 	@echo "usage: make install"
