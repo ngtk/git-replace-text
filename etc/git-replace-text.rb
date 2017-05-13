@@ -1,8 +1,8 @@
 class GitReplaceText < Formula
   desc "git sub-command to replace the text in the repository."
   homepage "https://github.com/ngtk/git-replace-text"
-  url "https://github.com/ngtk/git-replace-text/archive/v#{version}.tar.gz"
   version "0.0.2"
+  url "https://github.com/ngtk/git-replace-text/archive/v#{version}.tar.gz"
   sha256 "663c77fc7d4779de81c2277d663f97fba6b365387a080bcee43caa0c1fdcad81"
 
   def install
